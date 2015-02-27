@@ -68,6 +68,11 @@ public void displayLosingMessage()
   buttons[7][11].setLabel("O");
   buttons[7][12].setLabel("S");
   buttons[7][13].setLabel("E");
+  for (int b = 0; b < bombs.size(); b++){
+    bombs.get(b).marked = false;
+    bombs.get(b).clicked = true;
+  }
+  stop();
 }
 public void displayWinningMessage()
 {
